@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.bodyImg {
+    background-image: url('../images/home_image.jpg');
+    width: 75%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.bodyImg .imgContent {
+    text-align: center;
+    background-size: cover;
+
+}
+
+.bodyImg .imgContent h1 {
+    padding: 20px 50px;
+    background: rgba(162, 159, 159, 0.4);
+    
+    border-radius: 7px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    
+    align-items: center;
+}
+
+
+.card_box  {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+  }
+.card_img  img{
+    display: flex;
+    width: 250PX;
+    height:250px;
+  }
+  .card_img  P{
+    font-size: 20px;
+    color: blue;
+    font-weight: 500;    
+  }
+.bodyImg .imgContent a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(113, 107, 107);
+    background: rgb(227, 63, 63);
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: 900;
+}
+
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+/*kalam div styles*/
+.kalamdiv{
+    display:flex;
+}
+.latest{
+    width:25%;
+    background-color: #E4CCE9;
+}
+.marquee{
+    height: 50vh;
+}
+/* kalamdiv */
+
+
+/* ******** Card Group Style Starts here ********** */
+/* .outerBody{
+    width: 100%;
+} */
+.cardBody {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* overflow-x: auto;
+    padding: 24px;
+    width: 114rem;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 0px;
+    gap: 12px; */
+    /* justify-content: center;
+    align-items: center;
+    background: rgb(240, 238, 238); */
+}
+
+
+
+/* .container {
+    /* flex: 0 0 23%;
+    padding: 24px;
+    border-radius: 8px; */
+    /* scroll-snap-align: start; */
+    /* position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    overflow: hidden;} */
+ 
+
+.container .card {
+    position: relative;
+}
+.container .card .face {
+    width:250px;
+    height: 250px;
+    transition: 0.4s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    /* background: #333; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1 {
+    transform: translateY(0px);
+    box-shadow:inset 5px 15px 30px rgba(0, 0, 0, 0.09);
+}
+
+.container .card .face.face1 .content {
+    transition: 0.5s;
+    text-align: center;
+    height: 250px;
+    width: 250px;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 100;
+}
+
+.container .card .face.face1 .content .Ficons {
+    font-size: 4em;
+    color: #fff;
+    display: inline-block;
+    
+}
+
+.container .card .face.face1 .content h3 {
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.container .card .face.face1 .content a {
+    transition: 0.5s;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+    /* box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.09); */
+
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2 {
+    transform: translateY(0px);
+}
+
+.container .card .face.face2 .content p,
+a {
+    font-size: 10pt;
+    margin: 10px;
+    padding: 10;
+    color: #333;
+    justify-content: center;
+}
+
+.container .card .face.face2 .content a {
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+}
+
+.container .card .face.face2 .content a:hover {
+    background: #333;
+    color: whitesmoke;
+    /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); */
+}
+
+
+
+/* ////////////////////////////////////////////////////////// */
+/* @import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+.group{
+    display: block;
+    padding: 10px; 
+    margin-bottom: 60px;    
+    text-align: justify;
+}
+
+.mediaScroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.mediaElement {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+.mediaElement ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 0;
+}
+.mediaElement ul li{
+    padding-top: 5px;
+    font-size: 26px;
+}
+.mediaElement ul li i{
+    color: #ff9f43;
+}
+.mediaElement .cardBtn{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #2183a2;
+}
+
+.mediaElement > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.snapsInline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snapsInline > * {
+  scroll-snap-align: start;
+} */
+
+/************ Card Style end Here ************/
+
+
+
+/******** center box respnsive 900px ***********/
+@media only screen and (max-width: 992px) {
+    .bodyImg .imgContent h1 {
+        padding: 50px 50px;
+        font-size: 25px;
+        height:50vh;
+    }
+
+    .bodyImg {
+        height: 50vh;
+    }
+
+    .bodyImg .imgContent a {
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bodyImg .imgContent h1 {
+        font-size: 15px;
+        height:40vh;
+
+    }
+    .bodyImg {
+        height: 40vh;
+    }
+
+    .bodyImg .imgContent a {
+        padding: 7px 10px;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bodyImg .imgContent h1 {
+        font-size: 10px;
+        height: 30vh;
+    }
+    .kalamdiv{
+        display:inline-block;
+    }
+    .latest{
+        width:100%;
+    }
+    .bodyImg {
+        height: 30vh;
+        width:100%;
+    }
+    .bodyImg .imgContent a {
+        padding: 4px 9px;
+    }
+
+}
+@media only screen and (min-width:831px) and (max-width: 920px) {
+    .marquee{
+        height: 585px;
+    }
+}
+@media only screen and (min-width: 820px) and (max-width:830px) {
+    .marquee{
+        height: 485px;
+    }
+}
+@media screen and (min-width:1020px) and (max-width:1030px){
+    .marquee{
+        height: 265px;
+    }
+}
+@media screen and (min-width:1250px) and (max-width:1290px){
+    .marquee{
+        height: 405px;
+    }
+}
+@media screen and (min-width:760px) and (max-width:790px){
+    .marquee{
+        height: 310px;
+    }
+}

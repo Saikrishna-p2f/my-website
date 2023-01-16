@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+} 
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.5rem;
+}
+
+.img {
+    background: url('../images/signin_form.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px 7px 7px 7px
+}
+
+.center {
+    box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+}
+
+
+@media only screen and (max-width: 576px) {
+    .border {
+        width: 90%;
+        
+    }
+
+    .center {
+        display: block;
+
+    }
+
+    .img {
+        width: 100%;
+        height: 30vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .log {
+        width: 100%;
+        padding: 40px 10px;
+    }
+
+    .logs {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logs .Login {
+        width: 60%;
+        display: flex;
+        justify-content: start;
+        font-weight: 900;
+    }
+
+    .logs .icons {
+        width: 40%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .logs .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 16px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+
+    .logs .icons a:hover {
+        background: #e3b04b;
+    }
+
+    .logs .icons a span {
+        color: rgb(165, 163, 163);
+    }
+
+    .logs .icons a:hover span,
+    .logs .icons a:focus span {
+        color: #fff;
+    }
+
+    form {
+        display: block;
+        margin-top: 1em;
+
+    }
+
+    label {
+        display: flex;
+        margin-bottom: 0.4rem;
+    }
+
+    .user .label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    form .user .formcontrol,
+    .user button {
+        position: relative;
+        margin-bottom: 1rem;
+        display: block;
+        width: 100%;
+        height: 50px;
+        border: .3px solid rgb(228, 222, 222);
+    }
+
+    .user button {
+        background: #e3b04b;
+        color: #fff;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+
+    .user .checkBox label {
+        color: #e3b04b;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 576px) {
+    .border {
+        width: 80%;
+       
+    }
+
+    .center {
+        display: block;
+        /* box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24); */
+
+    }
+
+    .img {
+        width: 100%;
+        height: 30vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .log {
+        width: 100%;
+        padding: 40px 10px;
+    }
+
+    .logs {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logs .Login {
+        width: 60%;
+        display: flex;
+        justify-content: start;
+        font-weight: 900;
+    }
+
+    .logs .icons {
+        width: 40%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .logs .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 16px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+
+    .logs .icons a:hover {
+        background: #e3b04b;
+    }
+
+    .logs .icons a span {
+        color: rgb(165, 163, 163);
+    }
+
+    .logs .icons a:hover span,
+    .logs .icons a:focus span {
+        color: #fff;
+    }
+
+    form {
+        display: block;
+        margin-top: 1em;
+
+    }
+
+    label {
+        display: flex;
+        margin-bottom: 0.4rem;
+    }
+
+    .user .label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    form .user .formcontrol,
+    .user button {
+        position: relative;
+        margin-bottom: 1rem;
+        display: block;
+        width: 100%;
+        height: 50px;
+        border: .3px solid rgb(228, 222, 222);
+    }
+
+    .user button {
+        background: #e3b04b;
+        color: #fff;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+
+    .user .checkBox label {
+        color: #e3b04b;
+    }
+
+
+}
+
+@media only screen and (min-width: 776px) {
+    .border {
+        width: 80%; 
+    }
+    .center {
+        display: flex;
+        margin: 10px 0 0 0;
+        height: 95vh;
+    }
+
+    .img {
+        width: 100%;
+        height: 95vh;
+        border-radius: 7px 0 0 7px; 
+    }
+
+    .log {
+        width: 100%;
+        padding: 40px 10px;
+        margin: 10px 20px;
+    }
+
+    .logs {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logs .Login {
+        width: 60%;
+        display: flex;
+        justify-content: start;
+        font-weight: 900;
+    }
+
+    .logs .icons {
+        width: 40%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .logs .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 16px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+
+    .logs .icons a:hover {
+        background: #e3b04b;
+    }
+
+    .logs .icons a span {
+        color: rgb(165, 163, 163);
+    }
+
+    .logs .icons a:hover span,
+    .logs .icons a:focus span {
+        color: #fff;
+    }
+
+    form {
+        display: block;
+        margin-top: 1em;
+
+    }
+
+    label {
+        display: flex;
+        margin-bottom: 0.4rem;
+    }
+
+    .user .label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    form .user .formcontrol,
+    .user button {
+        position: relative;
+        margin-bottom: 1rem;
+        display: block;
+        width: 100%;
+        height: 50px;
+        border: .3px solid rgb(228, 222, 222);
+    }
+
+    .user button {
+        background: #e3b04b;
+        color: #fff;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+    #user-forgot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .user .checkBox{
+        width: 50%;
+    }
+    .user .checkBox label{
+        color: #e3b04b;
+    }
+
+
+}
+
+
+/* ///////////////////////////////////////////////// */
+
+@media only screen and (min-width: 996px) {
+    .border {
+        width: 75%; 
+    }
+    .center {
+        display: flex;
+        margin: 10px 0 0 0;
+        height: 90vh;
+    }
+
+    .img {
+        width: 100%;
+        height: 90vh;
+        border-radius: 7px 0 0 7px; 
+    }
+
+    .log {
+        width: 100%;
+        padding: 40px 10px;
+        margin: 10px 20px;
+    }
+
+    .logs {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logs .Login {
+        width: 60%;
+        display: flex;
+        justify-content: start;
+        font-weight: 900;
+    }
+
+    .logs .icons {
+        width: 40%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .logs .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 16px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+
+    .logs .icons a:hover {
+        background: #e3b04b;
+    }
+
+    .logs .icons a span {
+        color: rgb(165, 163, 163);
+    }
+
+    .logs .icons a:hover span,
+    .logs .icons a:focus span {
+        color: #fff;
+    }
+
+    form {
+        display: block;
+        margin-top: 1em;
+
+    }
+
+    label {
+        display: flex;
+        margin-bottom: 0.4rem;
+    }
+
+    .user .label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    form .user .formcontrol,
+    .user button {
+        position: relative;
+        margin-bottom: 1rem;
+        display: block;
+        width: 100%;
+        height: 50px;
+        border: .3px solid rgb(228, 222, 222);
+    }
+
+    .user button {
+        background: #e3b04b;
+        color: #fff;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+    #user-forgot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .user .checkBox{
+        width: 50%;
+    }
+    .user .checkBox label{
+        color: #e3b04b;
+    }
+
+
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+@media only screen and (min-width: 1200px) {
+    .border {
+        width: 65%; 
+    }
+    .center {
+        display: flex;
+        margin: 10px 0 0 0;
+        height: 85vh;
+    }
+
+    .img {
+        width: 100%;
+        height: 85vh;
+        border-radius: 7px 0 0 7px; 
+    }
+
+    .log {
+        width: 100%;
+        padding: 40px 10px;
+        margin: 10px 30px;
+    }
+
+    .logs {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logs .Login {
+        width: 60%;
+        display: flex;
+        justify-content: start;
+        font-weight: 900;
+    }
+
+    .logs .icons {
+        width: 40%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .logs .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 16px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+
+    .logs .icons a:hover {
+        background: #e3b04b;
+    }
+
+    .logs .icons a span {
+        color: rgb(165, 163, 163);
+    }
+
+    .logs .icons a:hover span,
+    .logs .icons a:focus span {
+        color: #fff;
+    }
+
+    form {
+        display: block;
+        margin-top: 1em;
+
+    }
+
+    label {
+        display: flex;
+        margin-bottom: 0.4rem;
+    }
+
+    .user .label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    form .user .formcontrol,
+    .user button {
+        position: relative;
+        margin-bottom: 1rem;
+        display: block;
+        width: 100%;
+        height: 50px;
+        border: .3px solid rgb(228, 222, 222);
+    }
+
+    .user button {
+        background: #e3b04b;
+        color: #fff;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+    #user-forgot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .user .checkBox{
+        width: 50%;
+    }
+    .user .checkBox label{
+        color: #e3b04b;
+    }
+
+
+}
